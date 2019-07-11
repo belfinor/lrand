@@ -359,6 +359,12 @@ func TestMersenne(t *testing.T) {
 			t.Errorf("wrong output %d: %d != %d", i, have, want)
 		}
 	}
+
+	mt = New()
+	mt.Uint64()
+
+	mt = New()
+	mt.Int63()
 }
 
 func TestMersenneReader(t *testing.T) {
@@ -389,7 +395,7 @@ var _ rand.Source = &Mersenne{}
 var _ io.Reader = &Mersenne{}
 
 func TestNext(t *testing.T) {
-	for i := 0; i < 1000; i++ {
+	for i := 0; i < 15000; i++ {
 		Next()
 	}
 }
