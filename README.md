@@ -50,7 +50,6 @@ package main
 import (
 
   "fmt"
-  "time"
 
   "github.com/belfinor/lrand"
 )
