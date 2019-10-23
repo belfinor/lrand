@@ -62,4 +62,4 @@ func main() {
 }
 ```
 
-In this case calls New/Seed are transparent to the developer. Moreover, in this case, the values ​​are precomputed and stored in the channel for optimization.
+In this case calls *New/Seed* are transparent to the developer. Moreover, in this case, the values ​​are precomputed and stored in the channel for optimization.
