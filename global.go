@@ -1,8 +1,8 @@
 package lrand
 
 // @author  Mikhail Kirillov <mikkirillov@yandex.ru>
-// @version 1.001
-// @date    2019-07-11
+// @version 1.002
+// @date    2019-10-23
 
 import (
 	"time"
@@ -20,7 +20,7 @@ func init() {
 
 	output = make(chan int64, 1024)
 
-	GlobalReseed = 10000
+	GlobalReseed = 1000000
 
 	go generator()
 }
